@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Destino Más Hermoso</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:
+    radial-gradient(circle at top, #3f1b5e 0%, #170a26 40%, #090511 100%);
+    overflow-x:hidden;
+    font-family:'Cormorant Garamond', serif;
+}
+
+/* ESTRELLAS */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(#fff8d8 1px, transparent 1px),
+    radial-gradient(#ffffff 1px, transparent 1px);
+    background-size:180px 180px, 250px 250px, 320px 320px;
+    opacity:.55;
+    animation:parpadeo 6s infinite alternate;
+    pointer-events:none;
+}
+
+@keyframes parpadeo{
+    from{opacity:.35;}
+    to{opacity:.8;}
+}
+
+/* CONTENEDOR */
+
+.poema{
+    width:100%;
+    max-width:950px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:35px;
+    padding:70px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:
+    0 0 40px rgba(255,192,203,.2),
+    0 0 80px rgba(255,215,0,.08);
+}
+
+/* BRILLOS */
+
+.poema::before{
+    content:"✨";
+    position:absolute;
+    top:20px;
+    right:35px;
+    font-size:2rem;
+    animation:flotar 4s infinite ease-in-out;
+}
+
+.poema::after{
+    content:"🌹";
+    position:absolute;
+    bottom:20px;
+    left:30px;
+    font-size:2.2rem;
+    animation:flotar 5s infinite ease-in-out;
+}
+
+@keyframes flotar{
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+/* TITULO */
+
+h1{
+    font-family:'Great Vibes', cursive;
+    font-size:5rem;
+    text-align:center;
+    color:#ffd7f2;
+    margin-bottom:10px;
+    text-shadow:
+    0 0 15px rgba(255,192,203,.8),
+    0 0 35px rgba(255,192,203,.4);
+}
+
+.fecha{
+    text-align:center;
+    color:#f6e7ff;
+    font-size:1.4rem;
+    margin-bottom:50px;
+    letter-spacing:2px;
+}
+
+/* LINEA DECORATIVA */
+
+.decoracion{
+    text-align:center;
+    color:#ffd700;
+    font-size:1.6rem;
+    margin-bottom:40px;
+}
+
+/* TEXTO */
+
+.contenido{
+    color:#fff8f8;
+    font-size:1.65rem;
+    line-height:2.15;
+    text-align:center;
+}
+
+.contenido p{
+    margin-bottom:28px;
+}
+
+/* FRASES DESTACADAS */
+
+.destacado{
+    color:#ffe3f6;
+    font-size:2rem;
+    font-weight:600;
+    text-shadow:0 0 12px rgba(255,182,193,.5);
+}
+
+/* FIRMA */
+
+.firma{
+    margin-top:60px;
+    text-align:center;
+    color:#ffd7e9;
+}
+
+.firma .amor{
+    font-family:'Great Vibes', cursive;
+    font-size:3rem;
+    margin-top:15px;
+}
+
+/* CORAZONES FLOTANTES */
+
+.corazon{
+    position:fixed;
+    color:rgba(255,182,193,.25);
+    animation:subir linear infinite;
+    pointer-events:none;
+}
+
+.corazon:nth-child(1){
+    left:10%;
+    font-size:20px;
+    animation-duration:12s;
+}
+
+.corazon:nth-child(2){
+    left:30%;
+    font-size:30px;
+    animation-duration:15s;
+}
+
+.corazon:nth-child(3){
+    left:60%;
+    font-size:24px;
+    animation-duration:18s;
+}
+
+.corazon:nth-child(4){
+    left:80%;
+    font-size:28px;
+    animation-duration:14s;
+}
+
+@keyframes subir{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-120px);
+    }
+}
+
+@media(max-width:768px){
+
+    .poema{
+        padding:40px 25px;
+    }
+
+    h1{
+        font-size:3.5rem;
+    }
+
+    .contenido{
+        font-size:1.35rem;
+        line-height:1.9;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="corazon">♥</div>
+<div class="corazon">♥</div>
+<div class="corazon">♥</div>
+<div class="corazon">♥</div>
+
+<div class="poema">
+
+<h1>Mi Destino Más Hermoso</h1>
+
+<div class="fecha">
+Domingo, 7 de junio de 2026
+</div>
+
+<div class="decoracion">
+✧･ﾟ: * ✧･ﾟ:* 💖 *:･ﾟ✧ *:･ﾟ✧
+</div>
+
+<div class="contenido">
+
+<p>
+Esta noche de domingo, 7 de junio de 2026...
+</p>
+
+<p>
+cuando el cielo se extiende inmenso sobre nosotros,
+cubierto por miles de estrellas que parecen susurrar secretos de amor,
+mi corazón vuelve a encontrarte entre cada pensamiento,
+porque no existe distancia, tiempo ni silencio
+capaz de apartarte de mi alma.
+</p>
+
+<p>
+Tú eres ese milagro que llegó a mi vida
+cuando menos imaginaba que podía existir un amor tan grande.
+Eres la razón por la que mis días tienen sentido,
+la luz que aparece incluso en los momentos más oscuros,
+la sonrisa que mi corazón busca sin descanso,
+y la mujer que convirtió mis sueños en una realidad maravillosa.
+</p>
+
+<p class="destacado">
+Fuiste el regalo más hermoso que la vida pudo entregarme.
+</p>
+
+<p>
+Porque amarte no es solamente un sentimiento.
+Es una forma de respirar.
+Es despertar y pensar en ti.
+Es cerrar los ojos y encontrarte.
+Es escuchar tu voz y sentir paz.
+Es descubrir cada día una razón nueva para enamorarme aún más de ti.
+</p>
+
+<p>
+Mi niña hermosa,
+si pudieras entrar por un instante en mi corazón,
+verías que cada rincón te pertenece.
+Verías que cada latido pronuncia tu nombre.
+Verías que cada sueño tiene tu sonrisa.
+Verías que cada ilusión está construida con los colores de tu mirada.
+</p>
+
+<p class="destacado">
+Porque desde que llegaste a mi vida, todo cambió.
+</p>
+
+<p>
+Las noches se volvieron más hermosas.
+Las estrellas brillaron con más fuerza.
+Los amaneceres parecieron más cálidos.
+Y el amor dejó de ser una palabra
+para convertirse en la realidad más maravillosa que he vivido.
+</p>
+
+<p>
+Me enamora tu forma de ser.
+Me enamora tu dulzura.
+Me enamora tu manera de mirar.
+Me enamora tu forma de hablar.
+Me enamora la belleza de tu alma,
+esa belleza que supera cualquier cosa que mis ojos puedan contemplar.
+</p>
+
+<p>
+Porque eres hermosa por fuera,
+pero infinitamente más hermosa por dentro.
+Y eso es lo que hace que mi amor por ti
+crezca cada día sin detenerse.
+</p>
+
+<p class="destacado">
+No existe un solo segundo en el que deje de amarte.
+</p>
+
+<p>
+Incluso cuando el mundo guarda silencio,
+mi corazón sigue hablándote.
+Incluso cuando la distancia intenta separarnos,
+mi alma continúa abrazándote.
+Incluso cuando cierro los ojos para descansar,
+mis sueños siguen buscándote.
+</p>
+
+<p>
+Porque ya eres parte de mí.
+Parte de mis pensamientos.
+Parte de mis emociones.
+Parte de mis alegrías.
+Parte de mis esperanzas.
+Y parte de todo lo que soy.
+</p>
+
+<p>
+Si pudiera regalarte algo esta noche,
+te regalaría mi corazón entero.
+Cada latido.
+Cada sueño.
+Cada promesa.
+Cada ilusión.
+Cada pedazo de amor que existe dentro de mí.
+</p>
+
+<p>
+Porque todo lo que tengo,
+todo lo que soy
+y todo lo que seré,
+siempre querrá pertenecerte.
+</p>
+
+<p>
+Gracias por existir.
+Gracias por llenar mi vida de felicidad.
+Gracias por enseñarme que el amor verdadero sí existe.
+Gracias por hacerme sentir el hombre más afortunado del mundo
+simplemente con tu presencia.
+</p>
+
+<p class="destacado">
+Nunca dejaré de elegirte.
+Nunca dejaré de admirarte.
+Nunca dejaré de cuidarte.
+Nunca dejaré de enamorarme de ti.
+</p>
+
+<p>
+Porque eres mi sueño más hermoso,
+mi bendición más grande,
+mi felicidad más sincera,
+mi presente favorito,
+mi futuro deseado
+y el amor eterno de mi vida.
+</p>
+
+<p>
+Te amo más de lo que las palabras pueden explicar,
+más de lo que los poemas pueden describir,
+más de lo que el tiempo puede medir.
+</p>
+
+<p class="destacado">
+Y mientras exista un solo latido dentro de mí,
+te amaré con toda mi alma,
+con todo mi corazón,
+y con toda la eternidad que habita en mi amor por ti.
+</p>
+
+</div>
+
+<div class="firma">
+Con todo mi amor eterno
+<div class="amor">❤️ Para Ti ❤️</div>
+</div>
+
+</div>
+
+</body>
+  </html>
